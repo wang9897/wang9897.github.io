@@ -50,7 +50,7 @@ $(document).ready(function () {
     .on('sidebar.isShowing', function () {
       //添加 “.velocity('stop')” 用以中止动画
       isDesktop() && body.velocity('stop').velocity(
-        {paddingRight: SIDEBAR_WIDTH},
+        {paddingLeft: SIDEBAR_WIDTH},
         SIDEBAR_DISPLAY_DURATION
       );
       // sidebar 内容的效果应该在sidebarsidebarShowMotion内触发
@@ -107,7 +107,7 @@ $(document).ready(function () {
 
   function sidebarHideMotion () {
     //添加 “.velocity('stop')” 用以中止动画
-    isDesktop() && body.velocity('stop').velocity({paddingRight: 0});
+    isDesktop() && body.velocity('stop').velocity({paddingLeft: 0});
     // sidebar 内容动画中止和隐藏
     $('.sidebar .motion-element').velocity('stop').css('display','none');;
     // sidebar 动画中止和隐藏

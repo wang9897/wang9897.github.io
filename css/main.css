@@ -908,7 +908,7 @@ body {
 }
 .sidebar-toggle {
   position: fixed;
-  right: 50px;
+  left: 50px;
   bottom: 45px;
   width: 15px;
   height: 15px;
@@ -944,7 +944,7 @@ body {
 .sidebar {
   width: 0;
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
   z-index: 1040;
@@ -1069,7 +1069,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6a86;
+  background: #ff25ff;
 }
 .links-of-friendly a {
   display: inline-block;
@@ -1087,7 +1087,7 @@ body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff41ff;
+  background: #7303f5;
 }
 .sidebar-nav {
   margin: 0;
@@ -1631,7 +1631,7 @@ body {
 .back-to-top {
   position: fixed;
   bottom: 19px;
-  right: 50px;
+  left: 50px;
   z-index: 1050;
   width: 15px;
   height: 13px;
@@ -2231,6 +2231,17 @@ ul li {
 .main-inner .content {
   width: 700px;
   color: #000;
+}
+#sidebar {
+  background: url("/images/magic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #eee;
 }
 body {
   background: url("/images/header.jpg");
