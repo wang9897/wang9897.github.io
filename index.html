@@ -3406,6 +3406,95 @@
           
           
             
+              <a class="post-title-link" href="/2019/03/13/bzoj4016-点分治/" itemprop="url">
+                bzoj4016(点分治)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-03-13T12:45:11+08:00" content="2019-03-13">
+            2019-03-13
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题解:强行凑题…..
+前面构造最短路树 然后后半部分模板点分统计贡献
+这个最短路树要保证路径的字典序最小 那么我们可以跑出最短路 枚举边 看距离差值是否等于边权 然后连边 对于所有连边排序以后 做$dfs$建树
+第二部分就直接考虑子树合并 维护每个深度下的最大距离 以及方案数 枚举统计贡献
+复杂度 
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/03/13/bzoj4016-点分治/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2019/03/12/bzoj3697-点分治/" itemprop="url">
                 bzoj3697(点分治)
               </a>
@@ -4170,91 +4259,6 @@ $ k=1 $ 必然连接直径两端
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/09/bzoj4987-树形dp/" itemprop="url">
-                bzoj4987(树形dp)
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-09T14:24:44+08:00" content="2019-03-09">
-            2019-03-09
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/dp/" itemprop="url" rel="index">
-                  <span itemprop="name">dp</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            题解首先,$\sum_{i=1}^{k-1} dis(a_i,a_{i+1})​$ 最小化 那么对于这$k​$个点的选择可见必然是一个连通子树 可以反证 如何统计价值呢?我们考虑对于一棵树如何遍历每个点让路径和最小 显然是 $ 2sum-len​$ 即2倍路径和减去直径 这样子我们可以设$dp[i]
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/09/bzoj4987-树形dp/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -4293,7 +4297,7 @@ $ k=1 $ 必然连接直径两端
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives/">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
