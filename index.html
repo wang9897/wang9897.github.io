@@ -3406,6 +3406,95 @@
           
           
             
+              <a class="post-title-link" href="/2019/03/20/bzoj1758-点分治-单调队列-二分/" itemprop="url">
+                bzoj1758(点分治+单调队列+二分)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-03-20T17:18:13+08:00" content="2019-03-20">
+            2019-03-20
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题解经典$0/1$分数规划 二分答案$ans$
+对于所有的边权减去$ans$
+问题转化成 树上是否存在一条路径 $L&lt;=len&lt;=R$ 并且路径和大于等于0
+比较直观的做法 用点分+线段树查询 复杂度$O(nlog^2nlogw)$  然而会T飞
+我们考虑 每个深度对应的是一段区间 总体
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/03/20/bzoj1758-点分治-单调队列-二分/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2019/03/19/hdu5664-点分治-容斥-树状数组/" itemprop="url">
                 hdu5664(点分治+容斥+树状数组)
               </a>
@@ -4196,91 +4285,6 @@ hash我们考虑自然溢出
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/11/bzoj2152-点分治/" itemprop="url">
-                bzoj2152(点分治)
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-11T15:37:20+08:00" content="2019-03-11">
-            2019-03-11
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/数据结构/" itemprop="url" rel="index">
-                  <span itemprop="name">数据结构</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>点分治模板题</p>
-<p>不同的是 我们不需要sort 也不需要去重</p>
-<p>对于每个子树重心做一个树$dp$即可 $dp[x][y]$表示x的子树中到x距离模3后y的个数</p>
-<p>然后对于每个子树重心 合并维护答案即可</p>
-<p>$复杂度O(nlogn)$</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/11/bzoj2152-点分治/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -4319,7 +4323,7 @@ hash我们考虑自然溢出
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives/">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -4333,7 +4337,7 @@ hash我们考虑自然溢出
 
           <div class="site-state-item site-state-tags">
             <a href="/tags/">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
