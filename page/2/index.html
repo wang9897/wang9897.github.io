@@ -3406,6 +3406,180 @@
           
           
             
+              <a class="post-title-link" href="/2019/03/19/bzoj4598-点分治-hash/" itemprop="url">
+                bzoj4598(点分治+hash)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-03-19T09:36:22+08:00" content="2019-03-19">
+            2019-03-19
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题解点对问题考虑点分
+我们考虑子树合并 有两种情况 分别是当前子树链作为开头或者结尾 对于长度大于$m$和小于等于$m$再分情况讨论下 然后分别维护已经合并完的子树在长度为$x$时 分别作为开头和结尾的情况下的方案数 统计贡献的话 就直接用hash判当前的子串是否合法即可
+hash我们考虑自然溢出 
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/03/19/bzoj4598-点分治-hash/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              <a class="post-title-link" href="/2019/03/15/bzoj3648-点分治-树状数组/" itemprop="url">
+                bzoj3648(点分治+树状数组)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-03-15T21:40:53+08:00" content="2019-03-15">
+            2019-03-15
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题解分为两部分 
+对于树形结构  直接点分 然后排序/树状数组统计贡献
+对于基环树结构  我们先把环取出来 以环上的点为根做点分治 统计每个子树内的贡献 然后考虑环上点的相互影响 对于每个子树维护每种深度的个数 然后我们可以考虑到每个点作用的是一段连续区间 可以采用树状数组来维护答案 时间复杂度是$
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/03/15/bzoj3648-点分治-树状数组/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2019/03/15/bzoj2870-点分治-树状数组/" itemprop="url">
                 bzoj2870(点分治+树状数组)
               </a>
@@ -4089,182 +4263,6 @@
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/11/bzoj1468-点分治/" itemprop="url">
-                bzoj1468(点分治)
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-11T14:30:28+08:00" content="2019-03-11">
-            2019-03-11
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/数据结构/" itemprop="url" rel="index">
-                  <span itemprop="name">数据结构</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            题解点分治模板题  
-第一次写点分治 那就把我的心酸证明历程也记录下吧
-首先:前置知识点  树的重心(当$x$为根时,其子树节点的$size$的最大值最小)
-然后每次以子树重心分治 保证分治层数不超过$logn$层
-证明: 我们假如其$size_u&gt;size/2$那么 我们必然可以往其$siz
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/11/bzoj1468-点分治/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/10/bzoj2282-树形dp/" itemprop="url">
-                bzoj2282树形dp
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-10T21:10:58+08:00" content="2019-03-10">
-            2019-03-10
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/dp/" itemprop="url" rel="index">
-                  <span itemprop="name">dp</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            题解首先路径的选择应该是直径的某一段区间…证明略(虽然我也是直观感受的)
-然后我们考虑对直径上区间的选择 对于区间[l,r]的价值为$max(dis(直径左端点,l),max(dis(直径右端点,r),子区间上的价值))$ 
-当$l$保持不变,$r$增加时,区间价值单调不增加,所以我们应该对于每个左
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/10/bzoj2282-树形dp/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -4303,7 +4301,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives/">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">26</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -4317,7 +4315,7 @@
 
           <div class="site-state-item site-state-tags">
             <a href="/tags/">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">18</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
