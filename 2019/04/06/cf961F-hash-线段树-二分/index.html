@@ -49,18 +49,18 @@
   </script>
 
 
-<meta name="description" content="##　题意 给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去">
+<meta name="description" content="题意给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去$che">
 <meta name="keywords" content="hash,线段树">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cf961F(hash+线段树+二分)">
 <meta property="og:url" content="http://yoursite.com/2019/04/06/cf961F-hash-线段树-二分/index.html">
 <meta property="og:site_name" content="wang9897">
-<meta property="og:description" content="##　题意 给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去">
+<meta property="og:description" content="题意给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去$che">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-06T05:17:24.074Z">
+<meta property="og:updated_time" content="2019-04-06T05:42:13.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="cf961F(hash+线段树+二分)">
-<meta name="twitter:description" content="##　题意 给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去">
+<meta name="twitter:description" content="题意给定一个字符串$T$ 求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀  前缀的长度小于串长 前缀长度为奇数 在是前缀的同时也是串的后缀  题解在考虑没有长度是奇数限制的情况下 直接对每个串做二分 $hash$来$check$即可 因为是奇数 所以这个前缀必然存在对称中心 所以我们可以考虑枚举这个中心  去$che">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -384,8 +384,7 @@
       
 
       
-        <span itemprop="articleBody"><p>##　题意</p>
-<p>给定一个字符串$T$</p>
+        <span itemprop="articleBody"><h2 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h2><p>给定一个字符串$T$</p>
 <p>求前$\lceil \frac{|T|}{2} \rceil$ 个位置与其关于对称轴对应位置形成的串 在满足以下条件下的最长前缀</p>
 <ul>
 <li>前缀的长度小于串长</li>
@@ -700,7 +699,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">1.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">2.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题意"><span class="nav-number">1.</span> <span class="nav-text">题意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题解"><span class="nav-number">2.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
