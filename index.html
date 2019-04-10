@@ -3406,6 +3406,107 @@
           
           
             
+              <a class="post-title-link" href="/2019/04/10/cf504E-树链剖分-SA/" itemprop="url">
+                cf504E(树链剖分+SA)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-04-10T21:19:09+08:00" content="2019-04-10">
+            2019-04-10
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/字符串/" itemprop="url" rel="index">
+                  <span itemprop="name">字符串</span>
+                </a>
+              </span>
+
+              
+              
+                , 
+              
+
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/字符串/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题意给你一颗$n$个节点的树 每个节点上都有一个字符$c$ q次查询两条路径形成的字符串的最长公共前缀
+题解比较直观的做法是
+树链剖分 每个点对对应$logn$个区间 然后二分答案 用$hash$取$check$
+复杂度$O(qlog^2n)$ 不能通过
+我们考虑对两段路径的$logn$个区间 类似
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/04/10/cf504E-树链剖分-SA/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2019/04/10/cf1037H/" itemprop="url">
                 cf1037H
               </a>
@@ -4275,95 +4376,6 @@ $q​$次查询 区间$[l,r]​$能’’匹配’’多少长度与其一致且
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/20/bzoj1758-点分治-单调队列-二分/" itemprop="url">
-                bzoj1758(点分治+单调队列+二分)
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-20T17:18:13+08:00" content="2019-03-20">
-            2019-03-20
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/数据结构/" itemprop="url" rel="index">
-                  <span itemprop="name">数据结构</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            题解经典$0/1$分数规划 二分答案$ans$
-对于所有的边权减去$ans$
-问题转化成 树上是否存在一条路径 $L&lt;=len&lt;=R$ 并且路径和大于等于0
-比较直观的做法 用点分+线段树查询 复杂度$O(nlog^2nlogw)$  然而会T飞
-我们考虑 每个深度对应的是一段区间 总体
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/20/bzoj1758-点分治-单调队列-二分/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -4402,7 +4414,7 @@ $q​$次查询 区间$[l,r]​$能’’匹配’’多少长度与其一致且
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives/">
-              <span class="site-state-item-count">27</span>
+              <span class="site-state-item-count">28</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -4416,7 +4428,7 @@ $q​$次查询 区间$[l,r]​$能’’匹配’’多少长度与其一致且
 
           <div class="site-state-item site-state-tags">
             <a href="/tags/">
-              <span class="site-state-item-count">19</span>
+              <span class="site-state-item-count">20</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
