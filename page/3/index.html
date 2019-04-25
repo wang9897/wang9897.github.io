@@ -3406,6 +3406,94 @@
           
           
             
+              <a class="post-title-link" href="/2019/03/12/bzoj3697-点分治/" itemprop="url">
+                bzoj3697(点分治)
+              </a>
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          Posted on
+          <time itemprop="dateCreated" datetime="2019-03-12T18:25:43+08:00" content="2019-03-12">
+            2019-03-12
+          </time>
+        </span>
+
+        
+          <span class="post-category">
+            &nbsp; | &nbsp; In
+            
+              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <a href="/categories/数据结构/" itemprop="url" rel="index">
+                  <span itemprop="name">数据结构</span>
+                </a>
+              </span>
+
+              
+              
+
+            
+          </span>
+        
+
+        
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+            题解:这题稍微有点绕
+如果我们仅仅只要查询一段路径的上$0/1$路径段的数量相等的话 直接做点分就行了 
+但是现在需要存在一个中间转折点 要这个点到两段的$0/1$路径的数量段同样相等  所以我们考虑每个点到重心节点的$0/1$数量段的差值 
+我们根据节点之前的祖先节点是否出现和其一样差值的节点将其
+            ...
+          </span>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/03/12/bzoj3697-点分治/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
               <a class="post-title-link" href="/2019/03/12/bzoj1316-点分治/" itemprop="url">
                 bzoj1316(点分治)
               </a>
@@ -4167,96 +4255,11 @@ $ k=1 $ 必然连接直径两端
 
 
     
-      
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      
-      
-        <h1 class="post-title" itemprop="name headline">
-          
-          
-            
-              <a class="post-title-link" href="/2019/03/09/bzoj3124-树形dp/" itemprop="url">
-                bzoj3124(树形dp)
-              </a>
-            
-          
-        </h1>
-      
-
-      <div class="post-meta">
-        <span class="post-time">
-          Posted on
-          <time itemprop="dateCreated" datetime="2019-03-09T02:19:17+08:00" content="2019-03-09">
-            2019-03-09
-          </time>
-        </span>
-
-        
-          <span class="post-category">
-            &nbsp; | &nbsp; In
-            
-              <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/dp/" itemprop="url" rel="index">
-                  <span itemprop="name">dp</span>
-                </a>
-              </span>
-
-              
-              
-
-            
-          </span>
-        
-
-        
-          
-        
-      </div>
-    </header>
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-            题解:我们考虑找出任意一条直径的两个端点$x$,$y$ 对直径上的节点打上标记 对于其他不在直径上的点$v$ 找到其离的最近的标记点$pos$  我们考虑当前$dis[pos]-dis[x]$与$dis[y]-dis[pos]$的大小关系然后判断$v$是否为分叉直径上的节点 若是则对原标记节点打上标
-            ...
-          </span>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2019/03/09/bzoj3124-树形dp/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo;</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">&raquo;</a>
   </nav>
 
  </div>
@@ -4290,7 +4293,7 @@ $ k=1 $ 必然连接直径两端
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives/">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">31</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -4304,7 +4307,7 @@ $ k=1 $ 必然连接直径两端
 
           <div class="site-state-item site-state-tags">
             <a href="/tags/">
-              <span class="site-state-item-count">22</span>
+              <span class="site-state-item-count">23</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>
