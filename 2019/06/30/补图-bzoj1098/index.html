@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="图论,补图,">
+  <meta name="keywords" content="链表,bfs,">
 
 
 
@@ -50,14 +50,14 @@
 
 
 <meta name="description" content="题解: 在原图中相连的两个点在补图中必然不相连  在补图中相连的点在原图中必然不会相连 所以我们考虑对于每个点做BFS 去查询其补图中联通块的大小 具体来说就是对于每个点去扩展其原图中没有连边的点并且这个点也没有被选入到补图   那么这个点与当前这个点必然在一个联通块里面 然后就能维护出补图联通块的个数以及每个联通块的大小 考虑用链表优化过程 (大概就是这个思路..我只是上来存个补图的板子) 复杂">
-<meta name="keywords" content="图论,补图">
+<meta name="keywords" content="链表,bfs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="补图(bzoj1098)">
 <meta property="og:url" content="http://yoursite.com/2019/06/30/补图-bzoj1098/index.html">
 <meta property="og:site_name" content="wang9897">
 <meta property="og:description" content="题解: 在原图中相连的两个点在补图中必然不相连  在补图中相连的点在原图中必然不会相连 所以我们考虑对于每个点做BFS 去查询其补图中联通块的大小 具体来说就是对于每个点去扩展其原图中没有连边的点并且这个点也没有被选入到补图   那么这个点与当前这个点必然在一个联通块里面 然后就能维护出补图联通块的个数以及每个联通块的大小 考虑用链表优化过程 (大概就是这个思路..我只是上来存个补图的板子) 复杂">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-30T08:00:32.689Z">
+<meta property="og:updated_time" content="2019-06-30T08:06:25.007Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="补图(bzoj1098)">
 <meta name="twitter:description" content="题解: 在原图中相连的两个点在补图中必然不相连  在补图中相连的点在原图中必然不会相连 所以我们考虑对于每个点做BFS 去查询其补图中联通块的大小 具体来说就是对于每个点去扩展其原图中没有连边的点并且这个点也没有被选入到补图   那么这个点与当前这个点必然在一个联通块里面 然后就能维护出补图联通块的个数以及每个联通块的大小 考虑用链表优化过程 (大概就是这个思路..我只是上来存个补图的板子) 复杂">
@@ -348,8 +348,8 @@
             &nbsp; | &nbsp; In
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/链表/" itemprop="url" rel="index">
-                  <span itemprop="name">链表</span>
+                <a href="/categories/图论/" itemprop="url" rel="index">
+                  <span itemprop="name">图论</span>
                 </a>
               </span>
 
@@ -360,8 +360,8 @@
 
             
               <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                <a href="/categories/链表/bfs/" itemprop="url" rel="index">
-                  <span itemprop="name">bfs</span>
+                <a href="/categories/图论/补图/" itemprop="url" rel="index">
+                  <span itemprop="name">补图</span>
                 </a>
               </span>
 
@@ -398,9 +398,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/图论/" rel="tag"><i class="fa fa-tag"></i>图论</a>
+            <a href="/tags/链表/" rel="tag"><i class="fa fa-tag"></i>链表</a>
           
-            <a href="/tags/补图/" rel="tag"><i class="fa fa-tag"></i>补图</a>
+            <a href="/tags/bfs/" rel="tag"><i class="fa fa-tag"></i>bfs</a>
           
         </div>
       
@@ -608,14 +608,14 @@
 
           <div class="site-state-item site-state-categories">
             <a href="/categories/">
-              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">categories</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags/">
-              <span class="site-state-item-count">29</span>
+              <span class="site-state-item-count">31</span>
               <span class="site-state-item-name">tags</span>
               </a>
           </div>

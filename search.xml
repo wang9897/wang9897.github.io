@@ -5,12 +5,12 @@
     <url>%2F2019%2F06%2F30%2F%E8%A1%A5%E5%9B%BE-bzoj1098%2F</url>
     <content type="text"><![CDATA[题解: 在原图中相连的两个点在补图中必然不相连 在补图中相连的点在原图中必然不会相连 所以我们考虑对于每个点做BFS 去查询其补图中联通块的大小 具体来说就是对于每个点去扩展其原图中没有连边的点并且这个点也没有被选入到补图 那么这个点与当前这个点必然在一个联通块里面 然后就能维护出补图联通块的个数以及每个联通块的大小 考虑用链表优化过程 (大概就是这个思路..我只是上来存个补图的板子) 复杂度 $O(n+m)$ 代码实现 12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788#include &lt;algorithm&gt;#include &lt;iostream&gt;#include &lt;cstring&gt;#include &lt;cstdio&gt;#include &lt;vector&gt;#include &lt;stack&gt;#include &lt;queue&gt;#include &lt;cmath&gt;#include &lt;set&gt;#include &lt;map&gt;#define mp make_pair#define pb push_back#define pii pair&lt;int,int&gt;#define link(x) for(edge *j=h[x];j;j=j-&gt;next)#define inc(i,l,r) for(int i=l;i&lt;=r;i++)#define dec(i,r,l) for(int i=r;i&gt;=l;i--)const int MAXN=3e5+10;const int NM=2e6+10;const double eps=1e-8;const int mod=1e9+9;#define ll long longusing namespace std;struct edge&#123;int t;edge*next;&#125;e[NM&lt;&lt;1],*h[MAXN],*o=e;void add(int x,int y)&#123;o-&gt;t=y;o-&gt;next=h[x];h[x]=o++;&#125;ll read()&#123; ll x=0,f=1;char ch=getchar(); while(!isdigit(ch))&#123;if(ch=='-')f=-1;ch=getchar();&#125; while(isdigit(ch))x=x*10+ch-'0',ch=getchar(); return x*f;&#125;int n,m;typedef struct node&#123; int t,pre,last;&#125;node;node d[MAXN];bool tag[MAXN],flag[MAXN];queue&lt;int&gt;que;int num;vector&lt;int&gt;ans;void bfs()&#123; while(!que.empty())&#123; int x=que.front();que.pop(); link(x)tag[j-&gt;t]=1; for(int k=d[0].last;k!=-1;k=d[k].last)&#123; int y=k; if(!tag[y]&amp;&amp;!flag[y])&#123; que.push(y);num++;flag[y]=1; int pre=d[y].pre; int last=d[y].last; d[pre].last=last; if(last!=-1)d[last].pre=pre; d[y].last=d[y].pre=-1;k=pre; &#125; &#125; link(x)tag[j-&gt;t]=0; &#125;&#125;int main()&#123; n=read();m=read(); d[0].pre=-1; inc(i,1,n)&#123; d[i].t=i; d[i].pre=i-1; d[i-1].last=i; &#125; d[n].last=-1; int x,y; inc(i,1,m)&#123; x=read();y=read(); add(x,y);add(y,x); &#125; inc(i,1,n)&#123; if(flag[i])continue; num=1;que.push(i);flag[i]=1; int pre=d[i].pre; int last=d[i].last; d[pre].last=last; if(last!=-1)d[last].pre=pre; d[i].last=d[i].pre=-1; bfs(); ans.pb(num); &#125; sort(ans.begin(),ans.end()); printf("%d\n",ans.size()); for(int i=0;i&lt;ans.size();i++)printf("%d ",ans[i]); printf("\n"); return 0;&#125;]]></content>
       <categories>
-        <category>链表</category>
-        <category>bfs</category>
+        <category>图论</category>
+        <category>补图</category>
       </categories>
       <tags>
-        <tag>图论</tag>
-        <tag>补图</tag>
+        <tag>链表</tag>
+        <tag>bfs</tag>
       </tags>
   </entry>
   <entry>
